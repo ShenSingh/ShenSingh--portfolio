@@ -1,0 +1,179 @@
+body {
+    background-color: white;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------ home 1 start ----------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+#home-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#home-1 .g-logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#home-1 .main-name {
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+
+#home-1 .content h2 {
+    font-weight: lighter;
+    font-size: 3rem;
+    color: #000;
+    margin-top: -40px;
+}
+
+#home-1 .content h2 span {
+    border-bottom: 3px solid #EC4747;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+
+#home-1 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#home-1 .mini-footer {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: right;
+}
+
+#home-1 .mini-footer a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: black;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+#home-1 .mini-footer a span{
+    color: #EC4747;
+}
+
+#home-1 .mini-footer a:hover::before {
+    top: 0;
+}
+
+#home-1 .mini-footer a:hover .dev-name {
+    color: black;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    animation: slide-in 0.3s ease-in-out;
+}
+#home-1 .btn span {
+    background-color: transparent;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding-right: 10px;
+    cursor: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    #home-1 .main-name {
+        font-size: 3rem;
+    }
+    #home-1 .content h2 {
+        font-size: 2rem;
+    }
+    #home-1 .g-logo {
+        width: 150px;
+        height: 150px;
+    }
+    #home-1 .mini-footer a {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    #home-1 .main-name {
+        font-size: 2.1rem;
+    }
+    #home-1 .content h2 {
+        font-size: 1.3rem;
+    }
+    #home-1 .g-logo {
+        width: 100px;
+        height: 100px;
+    }
+    #home-1 .mini-footer a {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 425px){
+    #home-1 .main-name {
+        font-size: 1.5rem;
+    }
+    #home-1 .content h2 {
+        font-size: 1rem;
+        margin-top: -20px;
+    }
+    #home-1 .g-logo {
+        width: 80px;
+        height: 80px;
+    }
+    #home-1 .content h2 span {
+        border-bottom: 2px solid #EC4747;
+        padding-bottom: 3px;
+    }
+    #home-1 .mini-footer a {
+        font-size: 0.7rem;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    #home-1 .main-name {
+        font-size: 1.5rem;
+    }
+    #home-1 .content h2 {
+        font-size: 1rem;
+        margin-top: -20px;
+
+    }
+    #home-1 .g-logo {
+        width: 60px;
+        height: 60px;
+    }
+    #home-1 .content h2 span {
+        border-bottom: 1px solid #EC4747;
+        padding-bottom: 2px;
+    }
+    #home-1 .mini-footer a {
+        font-size: 0.6rem;
+    }
+
+}
+/* --- home 1 --- end */
