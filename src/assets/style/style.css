@@ -441,12 +441,13 @@ body {
     text-transform: uppercase;
     color: #fff;
     font-family: "Poppins", sans-serif;
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     right: 0;
+    font-weight: 600;
+    opacity: 0.5;
   }
   
   .side-section-name span {
@@ -495,11 +496,10 @@ body {
     /* background-color: #084f5a;   */
   }
   
- #about .about-img{
-  width: 200px;
- }
+ 
  #about .about-img img{
   width: 350px;
+  margin-top: -12px;
  }
  #about .about-content{
   display: flex;
@@ -507,9 +507,18 @@ body {
  #about .about-ditails{
   display: inline-block;
   position: relative;
-  margin-left: 230px;
+  margin-left: 55px;
   margin-top: -28px;
 }
+#about .about-ditails h3{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 11px;
+}
+#about .about-ditails p{
+  margin-top: -5px;
+}
+
 #about .about-ditails .full-ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -522,19 +531,11 @@ body {
   font-weight: 700;
 }
 
-#about .about-ditails h3{
-  font-size: 24px;
-  font-weight: bold;
-}
-  
-  
-
-  
 #about .adout-button {
   display: flex;
   justify-content: center; /* Center the buttons */
   gap: 150px; /* Space between buttons */
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 #about .adout-button button {
