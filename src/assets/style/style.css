@@ -86,6 +86,7 @@ body {
   
   #header * {
     transition: ease-in-out 0.3s;
+
   }
   
   #header h1 {
@@ -163,6 +164,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: #00dfff;
     }
   }
 
@@ -177,6 +179,7 @@ body {
     /* left: 0; */
     top: 0;
     background: rgba(0, 0, 0, 0.9);
+    width: 100%;
   }
   
   #header.header-top .social-links,
@@ -201,9 +204,10 @@ body {
   
   #header.header-top .navbar {
     position: fixed;
-    right: 0px;
+    right: 25px;
     display: flex !important;
-    justify-content: flex-end !important; /* Aligns the navbar to the right */
+    justify-content: flex-end !important;
+  
 }
 
   @media (max-width: 768px) {
@@ -432,6 +436,57 @@ body {
     font-family: "Poppins", sans-serif;
     color: #fff;
   }
+  .side-section-name {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+  }
+  
+  .side-section-name span {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    transform: translateY(20px); /* Initial animation position */
+  }
+  
+  /* Apply a delay for each span based on its position */
+  .side-section-name span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .side-section-name span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .side-section-name span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .side-section-name span:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .side-section-name span:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .side-section-name span:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .side-section-name span:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+    }
+  }
+  
+
   
   /*--------------------------------------------------------------
   # About
@@ -440,10 +495,77 @@ body {
     /* background-color: #084f5a;   */
   }
   
+ #about .about-img{
+  width: 200px;
+ }
+ #about .about-img img{
+  width: 350px;
+ }
+ #about .about-content{
+  display: flex;
+ }
+ #about .about-ditails{
+  display: inline-block;
+  position: relative;
+  margin-left: 230px;
+  margin-top: -28px;
+}
+#about .about-ditails .full-ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#about .about-ditails .full-ul ul{
+  overflow: hidden;
+  list-style: none;
+}
+#about .about-ditails .full-ul ul li p span:nth-child(1){
+  font-weight: 700;
+}
+
+#about .about-ditails h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+  
   
 
   
-  
+#about .adout-button {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 150px; /* Space between buttons */
+  margin-top: 30px;
+}
+
+#about .adout-button button {
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners */
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+#about .adout-button button:nth-child(1) {
+  background-color: #00dfff; /* Apply your desired color to the second button */
+}
+
+#about .adout-button button:nth-child(2) {
+  background-color: transparent;
+  border: #00dfff solid 2px;
+  color: white;
+}
+
+.adout-button button:hover {
+  background-color: #2d3f53; /* Darker shade on hover */
+}
+
+.adout-button a {
+  text-decoration: none;
+  color: inherit; /* Inherit the button text color */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: make the buttons responsive */
+
   /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
