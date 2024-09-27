@@ -140,5 +140,14 @@
     }
   });
 
+// move to the home-2 page
+document.querySelector('.btn').addEventListener('mouseover', function() {
+  window.location.href = 'Content.html';
+});
+
+// move to the home-1 page
+document.querySelector('.btn-h').addEventListener('mouseover', function() {
+  window.location.href = 'index.html';
+});
 
 })();
