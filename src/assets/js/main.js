@@ -150,4 +150,21 @@ document.querySelector('.btn-h').addEventListener('mouseover', function() {
   window.location.href = 'index.html';
 });
 
+document.querySelectorAll('.progress').forEach(function(progress) {
+  let value = progress.getAttribute('data-value');
+  let degree = (value / 100) * 360;
+  progress.style.background = `conic-gradient(#00dfff ${degree}deg, #eee 0deg)`;
+});
+
+document.querySelectorAll('.progress').forEach(function(progress) {
+  let value = progress.getAttribute('data-value');
+  progress.style.width = `${value}%`;
+});
+
+// skill-icon
+
+
+
+//////////////////////////////
+
 })();

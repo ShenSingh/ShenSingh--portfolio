@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYLIX Software</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Black Section Styling */
+.black-section {
+  background-color: #1c1c1e;
+  padding: 80px 0;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Angled Effect */
+}
+
+.black-section .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.black-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.black-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.black-section .btn {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.black-section .btn:hover {
+  background-color: #ff3333;
+}
+
+/* White Section */
+.white-section {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+.white-section .stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.white-section .stat-item h2 {
+  font-size: 36px;
+  color: #ff4c4c;
+}
+
+.white-section .stat-item p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+  .black-section h1 {
+    font-size: 28px;
+  }
+  .white-section .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Black Section with Angled Bottom -->
+  <section class="black-section">
+    <div class="content">
+      <h1>Empowering Digital Innovation</h1>
+      <p>At KYLIX, we are dedicated to advancing technology...</p>
+      <a href="#" class="btn">About Us</a>
+    </div>
+  </section>
+
+  <!-- White Section Below -->
+  <section class="white-section">
+    <div class="stats">
+      <div class="stat-item">
+        <h2>32</h2>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-item">
+        <h2>128</h2>
+        <p>Projects</p>
+      </div>
+      <div class="stat-item">
+        <h2>1463</h2>
+        <p>Hours of Support</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
