@@ -744,10 +744,6 @@ li span {
   font-size: 34px;
   padding-left: 20px;
 }
-
-
-
-
 #about .interests .content div li p {
   font-size: 20px;
   font-weight: 600;
@@ -759,16 +755,180 @@ li span {
 }
 
 
-
-
   /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
+  .resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #00dfff;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #00dfff;
+    border: 2px solid #00dfff;
+  }
+
+  .resume .resume-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resume .container {
+    margin: 100px 0 32px 32px;
+    padding: 30px;
+  }
   
   
   /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
+  
+  .services .icon-box {
+    text-align: center;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #00dfff;
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+  }
+  
+  .services .icon-box .icon i {
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  .services .icon-box .icon::before {
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .services .icon-box h4 a {
+    color: #fff;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    background: #00dfff;
+    border-color: #00dfff;
+  }
+  
+  .services .icon-box:hover .icon {
+    background: #fff;
+  }
+  
+  .services .icon-box:hover .icon i {
+    color: #00dfff;
+  }
+  
+  .services .icon-box:hover .icon::before {
+    background: #00dfff;
+  }
+  
+  .services .icon-box:hover h4 a,
+  .services .icon-box:hover p {
+    color: #fff;
+  }
+
+
+  .service-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 0 -12px -12px;
+  }
+
+  .services .container {
+    margin: 100px 0 32px 32px;
+    padding: 30px;
+  }
+
+  #icon1, #icon2, #icon3, #icon4, #icon5, #icon6 {
+    margin: 0 0 12px 12px;
+  }
+
+  #icon4, #icon5, #icon6 {
+    padding-top: 24px;
+  }
+
+  /* ---------------------------demo--------------- */
   
   /*--------------------------------------------------------------
   # Contact
