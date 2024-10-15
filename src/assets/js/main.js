@@ -97,6 +97,7 @@
           sections.forEach((item) => {
             item.classList.remove('section-show')
           })
+          
           section.classList.add('section-show')
         }, 350);
       } else {
