@@ -867,6 +867,31 @@ li span {
     margin: 40px 0 0px 32px;
     padding: 0px 20px 0px 0px;
   }
+  #contact .contact-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  #contact .contact-info .address,
+  #contact .contact-info .socialLinks, 
+  #contact .contact-info .email, 
+  #contact .contact-info .phone{
+    background-color: rgba(255, 255, 255, 0.219);
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 10px; */
+    width: 500px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  #contact .contact-info .icon {
+    background-color: #00dfff ;
+    
+    
+  }
   
   
   
