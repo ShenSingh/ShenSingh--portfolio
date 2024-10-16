@@ -878,20 +878,104 @@ li span {
   #contact .contact-info .email, 
   #contact .contact-info .phone{
     background-color: rgba(255, 255, 255, 0.219);
-    /* position: relative; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* padding: 10px; */
+    grid-template-columns: 70px 470px;
     width: 500px;
     height: 60px;
     margin-bottom: 15px;
+    align-items: center;
+    justify-self: center;
   }
 
   #contact .contact-info .icon {
-    background-color: #00dfff ;
-    
-    
+    /* background-color: #00dfff ; */
+    margin-top: -10px;
+    padding: 10px;
   }
+  #contact .contact-info .icon a i{
+    /* background-color: #00dfff ; */
+    font-size: 26px;
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 10px;
+    width: 70;
+    height: 70;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+  }
+  #contact .contact-info .cont {
+    /* margin-top: -10px; */
+    margin-top: 5px;
+    /* padding-left: 100px; */
+  }
+
+  #contact .contact-info .social-links a i{
+    padding-left: 10px;
+    font-size: 23px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  #contact form {
+    background-color: rgba(255, 255, 255, 0.185);
+    width: 1000px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    gap: 20px;
+    padding-top: 10px;
+  }
+  
+  #contact form .row1 input[type="text"],
+  #contact form .row1 input[type="email"] {
+    color: white;
+    width: 44.4%; /* Adjusted to ensure they align well within the form */
+    padding: 18px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.185);
+    margin-left: 10px;
+  }
+    #contact form .row2 input[type="text"] {
+      color: white;
+      width: 94%;
+      padding: 18px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.185);
+      margin-left: 10px;
+    }
+    
+    #contact form .row3 textarea {
+      width: 94%;
+      padding: 20px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.185);
+      margin-left: 10px;
+      margin-bottom: 10px;
+      margin-top: 0px; /* Removed negative margin */
+      resize: horizontal;
+    }
+
+    #contact form button {
+      background-color: #00dfff;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+      display: block;   /* Ensures the button behaves like a block element */
+      margin: 0px auto; /* Auto-margins will center the button horizontally */
+    }
+  /* Styling placeholder text */
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Change the color */
+  font-style: italic;              /* Make it italic */
+  font-size: 14px;                 /* Adjust font size */
+  opacity: 1;                      /* Ensure full opacity */
+}
+
+  
+
   
   
   

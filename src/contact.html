@@ -69,50 +69,68 @@
                                         <a href="#" class="facebook"><i class="fa-solid fa-location-dot"></i></a>
                                     </div>
                                     <div class="cont">
-                                        <p>My Address</p>
+                                        <strong>My Address</strong>
                                         <p>156/8 Malwana Rd Dekatana, SL.</p>
                                     </div>   
                                 </div>
                                     <!-- 2 -->
-                                <!-- <div class="socialLinks">
-                                    <a href="#" class="facebook"><i class="fa-solid fa-diagram-project"></i></a>
-                                    <p>Social Profile</p>
-                                    <div class="social-links">
-                                        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                                        <a href="https://www.facebook.com/Shen8Singh" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                                        <a href="https://www.instagram.com/shenSingh/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-                                        <a href="https://www.linkedin.com/in/gayashan-ashinshana/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                                        <a href="https://github.com/ShenSingh" class="github"><i class="fa-brands fa-github"></i></a>
+                                <div class="socialLinks">
+                                    <div class="icon">
+                                        <a href="#" class="facebook"><i class="fa-solid fa-diagram-project"></i></a>
                                     </div>
-                                </div> -->
+                                    <div class="cont">
+                                        <strong>Social Profile</strong>
+                                        <div class="social-links">
+                                            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href="https://www.facebook.com/Shen8Singh" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                                            <a href="https://www.instagram.com/shenSingh/" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/in/gayashan-ashinshana/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="https://github.com/ShenSingh" class="github"><i class="fa-brands fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- <div class="col2">
+                            <div class="col2">
                                 
                                 <div class="email">
-                                    <a href="#" class="facebook"><i class="fa-solid fa-envelope"></i></a>
-                                    <p>Email Me</p>
-                                    <p>gayashan9090@gmail.com/p>
+                                    <div class="icon">
+                                        <a href="#" class="facebook"><i class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="cont">
+                                        <strong>Email Me</strong>
+                                        <p>gayashan9090@gmail.com/p>
+                                    </div>
                                 </div>
                                 <div class="phone">
-                                    <a href="#" class="facebook"><i class="fa-solid fa-phone"></i></i></a>
-                                    <p>Call Me</p>
-                                    <p>+94 714 049 123</p>
+                                    <div class="icon">
+                                        <a href="#" class="facebook"><i class="fa-solid fa-phone"></i></i></a>
+                                    </div>
+                                    <div class="cont">
+                                        <strong>Call Me</strong>
+                                        <p>+94 714 049 123</p>
+                                    </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     
                         <form action="">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <div class="row1">
+                                <!-- <label for="name">Your Name</label> -->
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+    
+                                <!-- <label for="email">Your Email</label> -->
+                                <input type="email" id="email" name="email" required placeholder="Your Email">
+                            </div>
+                            <div class="row2">
+                                <!-- <label for="subject">Subject</label> -->
+                                <input type="text" id="subject" name="subject" required placeholder="Subject">
+                            </div>
+                            <div class="row3">
+                                <!-- <label for="massage">Massage</label> -->
+                                <textarea name="massage" id="massage" rows="12" placeholder="Massage"></textarea> 
+                            </div>
 
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
 
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-
-                            <label for="massage">Massage</label>
-                            <textarea name="massage" id="massage"></textarea>
 
                             <button type="submit">Send Massage</button>
                         </form>
