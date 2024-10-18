@@ -1290,8 +1290,12 @@ transition: 0.6s ease-out;
 
 
   footer .footer-container-black{
+    position: relative;
+    margin-top: -150px;
     padding: 20px 50px 10px 50px;
-    /* background-color: ; */
+    background-color: #1B1B1B;
+    color: white !important;
+    z-index: 1100;
   }
 
   footer .footer-container-black .fo-main-name strong{
@@ -1321,7 +1325,7 @@ transition: 0.6s ease-out;
   }
 
   footer .footer-container-black .cons .col2 ul li a, footer .footer-container-black .cons .col4 ul li a{
-    color: rgba(0, 0, 0, 0.603) !important;
+    color: rgba(255, 255, 255, 0.603) !important;
     transition: 0.3s;
     text-decoration: none;
   }
@@ -1351,6 +1355,7 @@ transition: 0.6s ease-out;
     padding: 10px;
     border-radius: 5px;
     margin-left: -6px;
+    background-color: #1B1B1B;
 
   }
   footer .footer-container-black .cons .col5 .newsletter input[type="submit"]{
@@ -1369,38 +1374,38 @@ transition: 0.6s ease-out;
     opacity: 0.7;
     font-size: 14px;
   }
-  footer .down-fo {
-    background-color: #ffffff;
+  footer .down-fo-black {
+    background-color: black;
     padding: 0px 50px 0px 50px;
-    color: white;
+    color: white !important;
   }
-  footer .down-fo .down-fo-cons {
+  footer .down-fo-black .down-fo-cons {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  footer .down-fo .down-fo-cons .left{
+  footer .down-fo-black .down-fo-cons .left{
     justify-self: start;
   }
-  footer .down-fo .down-fo-cons .left p{
-    color: black !important;
+  footer .down-fo-black .down-fo-cons .left p{
+    color: white !important;
     line-height: 0.5;
     font-size: 14px;
   }
 
-  footer .down-fo .down-fo-cons .right .social-links{
+  footer .down-fo-black .down-fo-cons .right .social-links{
     display: flex;
     justify-content: center;
     gap: 20px;
     list-style-type: none;
   }
 
-  footer .down-fo .down-fo-cons .right .social-links a{
+  footer .down-fo-black .down-fo-cons .right .social-links a{
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.199);
-    color: black;
+    background: rgba(255, 255, 255, 0.199);
+    color: white;
     line-height: 1;
     margin-right: 8px;
     border-radius: 10%;
@@ -1408,19 +1413,19 @@ transition: 0.6s ease-out;
     height: 30px;
   }
 
-  footer .down-fo .down-fo-cons .right{
+  footer .down-fo-black .down-fo-cons .right{
     justify-self: right;
   }
 
-  footer .down-fo .down-fo-cons .right {
+  footer .down-fo-black .down-fo-cons .right {
     position: relative; /* Make the parent container-black relative */
     height: 50px;
     padding-bottom: 5px;
   }
   
-  footer .down-fo .down-fo-cons .right ul  .scroll-top {
-    background-color: #000000;
-    color: white;
+  footer .down-fo-black .down-fo-cons .right ul  .scroll-top {
+    background-color: white;
+    color: black;
     padding: 2px 6px;
     border-radius: 5px;
     cursor: pointer;
@@ -1428,7 +1433,7 @@ transition: 0.6s ease-out;
     transition: background-color 0.3s ease;
   }
   
-  footer .down-fo .down-fo-cons .right .scroll-top:hover {
+  footer .down-fo-black .down-fo-cons .right .scroll-top:hover {
     background-color: #009fcc;
   }
   
