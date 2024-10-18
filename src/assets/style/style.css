@@ -705,10 +705,10 @@ li span {
   }
   /* end skills */
 
-
-
-  
-
+  /* start about */
+  #about .about-img img{
+    width: 300px;
+   }
 }
 
 @media screen and (max-width: 1024px) {
