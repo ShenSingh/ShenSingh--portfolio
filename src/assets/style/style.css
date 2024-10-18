@@ -669,6 +669,47 @@ li span {
 @media screen and (max-width: 1440px) {
   
 }
+@media screen and (max-width: 1200px) {
+  
+  #about .interests .content div li {
+    width: 250px;
+    height: 60px;
+  }
+  #about .interests .content div li i {
+    font-size: 28px;
+    padding-left: 10px;
+  }
+  #about .interests .content div li p {
+    font-size: 18px;
+  }
+  /* end interests */
+
+  /* start skills */
+  .circle {
+    width: 110px;
+    height: 110px;
+  }
+  .circle-text {
+    font-size: 18px;
+  }
+
+  .skill p {
+    font-size: 14px;
+  }
+  .left-skill-set, .right-skill-set {
+    width: 35%;
+  }
+
+  li span {
+    font-size: 14px;
+  }
+  /* end skills */
+
+
+
+  
+
+}
 
 @media screen and (max-width: 1024px) {
   
@@ -686,7 +727,7 @@ li span {
   /* end interests */
 
   /* start skills */
-  
+
 
 }
   
