@@ -715,10 +715,10 @@ li span {
   
   #about .interests .content div li {
     width: 200px;
-    height: 50px;
+    height: 45px;
   }
   #about .interests .content div li i {
-    font-size: 24px;
+    font-size: 22px;
     padding-left: 10px;
   }
   #about .interests .content div li p {
@@ -727,6 +727,30 @@ li span {
   /* end interests */
 
   /* start skills */
+  .circle {
+    width: 90px;
+    height: 90px;
+  }
+  .circle-text {
+    font-size: 14px;
+  }
+
+  .skill p {
+    font-size: 12px;
+  }
+  .left-skill-set, .right-skill-set {
+    width: 30%;
+  }
+
+  li span {
+    font-size: 12px;
+  }
+  /* end skills */
+
+  /* start about */
+  #about .about-img img{
+    width: 250px;
+   }
 
 
 }
