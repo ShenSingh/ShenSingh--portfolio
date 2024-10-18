@@ -1002,7 +1002,6 @@ transition: 0.4s ease-out;
   bottom: 20px;
   cursor: pointer;
   transition: 0.4s ease-out;
-
 }
 
 .resume .stroke {
@@ -1025,9 +1024,57 @@ transition: 0.6s ease-out;
   
 }
 
-@media screen and (max-width: 1024px) {
-  
+@media screen and (max-width: 1200px) {
+  /*  */
+}
 
+@media screen and (max-width: 1024px) {
+  .resume .resume-item h4 {
+    line-height: 16px;
+    font-size: 14px;
+    color: #ffd900;
+  }
+  .resume .resume-title{
+    font-size: 20px;
+  }
+  .resume .resume-item ul {
+    padding-left: 15px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 0px;
+  }
+  /* end resume */
+
+  /* start assigmrnt */
+  .resume .assignment .card {
+    height: 250px;
+    width: 150px;
+  }
+  .resume .assignment .title {
+    font-size: 14px;
+  }
+  .resume .assignment .bar {
+    top: 80px;
+    left: 10px;
+  }
+  .resume .assignment .bar {
+    top: 80px;
+    left: 10px;
+  }
+  .resume .assignment .emptybar {
+    height: 100%;
+    width: 80%;
+  }
+  
+  .resume .assignment button {
+    width: 80px;
+    height: 30px;
+  }
+  /* end assignment */
+}
+
+@media screen and (max-width: 768px) {
+  
 }
   
   
