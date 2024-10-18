@@ -451,6 +451,10 @@
   margin-top: -2px;
 }
 
+#about .about-ditails .hide-text{
+  display: none;
+}
+
 #about .about-ditails .full-ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -752,6 +756,63 @@ li span {
     width: 250px;
    }
 
+   #about .about-ditails > p:nth-child(3){
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about .interests .content div li {
+    width: 150px;
+    height: 40px;
+  }
+  #about .interests .content div li i {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  #about .interests .content div li p {
+    font-size: 16px;
+  }
+  /* end interests */
+
+  /* start skills */
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .circle-text {
+    font-size: 14px;
+  }
+
+  .skill p {
+    font-size: 12px;
+  }
+  .left-skill-set, .right-skill-set {
+    width: 27%;
+  }
+
+  li span {
+    font-size: 11px;
+  }
+  /* end skills */
+
+  /* start about */
+  #about .about-img img{
+    width: 250px;
+   }
+
+   #about .about-ditails .full-ul ul{
+    margin-left: -20px;
+  }
+
+  #about .about-ditails .tol-text{
+    font-size: 16px;
+    display: none;
+  }
+   #about .about-ditails .hide-text{
+    display: block;
+    
+  }
 
 }
   
