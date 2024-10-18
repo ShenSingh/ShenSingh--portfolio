@@ -1145,18 +1145,18 @@ transition: 0.6s ease-out;
     color: #000;
   }
   footer .footer-container{
-    padding: 20px 50px 50px 50px;
+    padding: 20px 50px 10px 50px;
   }
 
   footer .footer-container .fo-main-name strong{
     font-size: 45px;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   footer .footer-container .cons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   footer .footer-container .cons strong{
@@ -1175,7 +1175,7 @@ transition: 0.6s ease-out;
   }
 
   footer .footer-container .cons .col2 ul li a, footer .footer-container .cons .col4 ul li a{
-    color: black !important;
+    color: rgba(0, 0, 0, 0.603) !important;
     transition: 0.3s;
     text-decoration: none;
   }
@@ -1225,7 +1225,7 @@ transition: 0.6s ease-out;
   }
   footer .down-fo {
     background-color: #ffffff;
-    padding: 5px 50px 5px 50px;
+    padding: 0px 50px 0px 50px;
     color: white;
   }
   footer .down-fo .down-fo-cons {
@@ -1238,6 +1238,7 @@ transition: 0.6s ease-out;
   footer .down-fo .down-fo-cons .left p{
     color: black !important;
     line-height: 0.5;
+    font-size: 14px;
   }
 
   footer .down-fo .down-fo-cons .right .social-links{
@@ -1248,7 +1249,7 @@ transition: 0.6s ease-out;
   }
 
   footer .down-fo .down-fo-cons .right .social-links a{
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1257,8 +1258,8 @@ transition: 0.6s ease-out;
     line-height: 1;
     margin-right: 8px;
     border-radius: 10%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   footer .down-fo .down-fo-cons .right{
@@ -1267,18 +1268,16 @@ transition: 0.6s ease-out;
 
   footer .down-fo .down-fo-cons .right {
     position: relative; /* Make the parent container relative */
+    height: 50px;
+    padding-bottom: 5px;
   }
   
-  footer .down-fo .down-fo-cons .right .scroll-top {
-    position: absolute; /* Position the scroll-top element absolutely */
-    right: 0 !important; /* Align it to the right */
-    bottom: 0; /* You can also adjust bottom or top as needed */
+  footer .down-fo .down-fo-cons .right ul  .scroll-top {
     background-color: #000000;
     color: white;
-    padding: 5px 10px;
+    padding: 2px 6px;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
     font-size: 1.2em;
     transition: background-color 0.3s ease;
   }
