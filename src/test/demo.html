@@ -3,157 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KYLIX Software</title>
+  <title>Document</title>
+
   <style>
-    /* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Header Styling */
-header {
-  background-color: #fff;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
+  .flex-wrapper {
   display: flex;
-  justify-content: center;
-  list-style: none;
+  flex-flow: row nowrap;
 }
-
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* Black Section Styling */
-.black-section {
-  background-color: #1c1c1e;
-  padding: 80px 0;
-  color: white;
+.flex-wrapper p {
   text-align: center;
-  position: relative;
-  z-index: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Angled Effect */
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
 }
 
-.black-section .content {
-  max-width: 800px;
-  margin: 0 auto;
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 150px;
 }
 
-.black-section h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 2.8;
 }
 
-.black-section p {
-  font-size: 18px;
-  margin-bottom: 30px;
+.circle {
+  fill: none;
+  stroke-width: 2.0;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
 }
 
-.black-section .btn {
-  background-color: #ff4c4c;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.black-section .btn:hover {
-  background-color: #ff3333;
-}
-
-/* White Section */
-.white-section {
-  background-color: #fff;
-  padding: 50px 0;
-  text-align: center;
-  position: relative;
-}
-
-.white-section .stats {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-
-.white-section .stat-item h2 {
-  font-size: 36px;
-  color: #ff4c4c;
-}
-
-.white-section .stat-item p {
-  font-size: 18px;
-  color: #333;
-}
-
-/* Optional: Responsive Design */
-@media (max-width: 768px) {
-  .black-section h1 {
-    font-size: 28px;
-  }
-  .white-section .stats {
-    flex-direction: column;
-    gap: 20px;
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
   }
 }
 
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
   </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <div class="flex-wrapper">
+      <div class="single-chart">
+        <svg viewBox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="90, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <text x="18" y="20.35" class="percentage">90%</text>
+        </svg>
+        <p>hsgfj</p>
+      </div>
 
-  <!-- Black Section with Angled Bottom -->
-  <section class="black-section">
-    <div class="content">
-      <h1>Empowering Digital Innovation</h1>
-      <p>At KYLIX, we are dedicated to advancing technology...</p>
-      <a href="#" class="btn">About Us</a>
-    </div>
-  </section>
+      <div class="single-chart">
+        <svg viewBox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+          stroke-dasharray="90, 100"
+          d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <text x="18" y="20.35" class="percentage">90%</text>
+          </svg>
+        <p>ksjdf</p>
+      </div>
 
-  <!-- White Section Below -->
-  <section class="white-section">
-    <div class="stats">
-      <div class="stat-item">
-        <h2>32</h2>
-        <p>Happy Clients</p>
+      <div class="single-chart">
+        <svg viewBox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="90, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <text x="18" y="20.35" class="percentage">90%</text>
+        </svg>
       </div>
-      <div class="stat-item">
-        <h2>128</h2>
-        <p>Projects</p>
+
+      <div class="single-chart">
+        <svg viewBox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="50, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <text x="18" y="20.35" class="percentage">50%</text>
+        </svg>
       </div>
-      <div class="stat-item">
-        <h2>1463</h2>
-        <p>Hours of Support</p>
+
+      <div class="single-chart">
+        <svg viewBox="0 0 36 36" class="circular-chart blue">
+          <path class="circle-bg"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <path class="circle"
+            stroke-dasharray="80, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+          <text x="18" y="20.35" class="percentage">80%</text>
+        </svg>
       </div>
     </div>
-  </section>
+  </div>
 </body>
 </html>
