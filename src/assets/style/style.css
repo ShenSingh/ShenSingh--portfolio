@@ -1237,8 +1237,6 @@ transition: 0.6s ease-out;
     display: grid;
     grid-template-columns: 1fr 1fr;
     }
-    
-
   }
   @media screen and (max-width: 768px) {
     .service-content {
@@ -1264,30 +1262,44 @@ transition: 0.6s ease-out;
   /*--------------------------------------------------------------
   # Contact
   --------------------------------------------------------------*/
-
-  #contact{
+  #contact {
     color: #fff;
-  }
-  #contact .container{
-    margin: 40px 0 0px 32px;
-    padding: 0px 20px 0px 0px;
-  }
-  #contact .contact-info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    margin-left: 100px;
-  }
+    display: flex;
+    justify-content: center;  
+}
+
+#contact .container {
+    display: block;
+}
+
+#contact .section-title {
+    text-align: left; 
+    margin-left: 0 !important;
+}
+
+#contact .contenct {
+  padding: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; /* Center the content */
+}
+
+#contact .contact-info {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr; /* Adjusted to be flexible for responsiveness */
+  gap: 5px;
+}
+
   #contact .contact-info .address,
   #contact .contact-info .socialLinks, 
   #contact .contact-info .email, 
   #contact .contact-info .phone{
     background-color: rgba(255, 255, 255, 0.219);
     display: grid;
-    grid-template-columns: 70px 470px;
-    width: 500px;
+    grid-template-columns: 70px auto;
     height: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     align-items: center;
     justify-self: center;
   }
@@ -1321,40 +1333,49 @@ transition: 0.6s ease-out;
   }
   #contact form {
     background-color: rgba(255, 255, 255, 0.185);
-    width: 1000px;
-    margin-left: 100px;
+    width: 100%;
+    margin: 0 auto;
     display: grid;
     grid-template-rows: auto auto auto; 
-    gap: 20px;
+    gap: 10px;
     padding-top: 10px;
+  }
+
+  #contact form .row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10px 0px 10px;
   }
   
   #contact form .row1 input[type="text"],
   #contact form .row1 input[type="email"] {
     color: white;
-    width: 44.4%; /* Adjusted to ensure they align well within the form */
     padding: 18px;
     border: none;
     background-color: rgba(255, 255, 255, 0.185);
-    margin-left: 10px;
+  }
+
+  #contact form .row2,
+  #contact form .row3{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
   }
     #contact form .row2 input[type="text"] {
       color: white;
-      width: 94%;
       padding: 18px;
       border: none;
       background-color: rgba(255, 255, 255, 0.185);
-      margin-left: 10px;
     }
+
     
     #contact form .row3 textarea {
-      width: 94%;
-      padding: 20px;
       border: none;
       background-color: rgba(255, 255, 255, 0.185);
-      margin-left: 10px;
-      margin-bottom: 10px;
-      margin-top: 0px; /* Removed negative margin */
       resize: horizontal;
     }
 
@@ -1367,10 +1388,11 @@ transition: 0.6s ease-out;
       border: none;
       cursor: pointer;
       width: 200px;
-      display: block;   /* Ensures the button behaves like a block element */
-      margin: 0px auto; /* Auto-margins will center the button horizontally */
+      display: block;  
+      margin: 0px auto;
+      margin-bottom: 10px;
     }
-  /* Styling placeholder text */
+
 #contact form input::placeholder,
 #contact form textarea::placeholder {
   color: rgba(255, 255, 255, 0.7); /* Change the color */
@@ -1380,9 +1402,35 @@ transition: 0.6s ease-out;
 }
 
   
+@media screen and (max-width: 1440px) {
+  
+}
 
+@media screen and (max-width: 1200px) {
+  #contact .contenct {
+    width: 100%;
+    /* main change */
+    max-width: 900px; 
+  }
+  #contact .contact-info .icon {
+    margin-top: -5px;
+    padding: 10px;
+  }
+  #contact .contact-info .icon a i{
+    font-size: 24px;
+    padding: 8px;
+    width: 60;
+    height: 60;
+  }
+}
+@media screen and (max-width: 1024px) {
   
+}
+@media screen and (max-width: 768px) {
   
+}
+
+
   
   /*--------------------------------------------------------------
   # Credits
