@@ -541,20 +541,63 @@ section .container {
 li {
   margin-bottom: 20px;
 }
-.progress-bar {
+.about .progress1 {
   width: 100%;
-  height: 10px;
-  background-color: #eee;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 5px;
+  height: 8px;
+  padding: 1px;
+  border-radius: 30px;
+  background: rgba(113, 123, 180, 0.178);  
 }
-.progress {
-  height: 100%;
-  background-color: #EC4747;
-  width: 0; /* Default width before animation */
-  border-radius: 5px;
+
+.about .progress-bar1 {
+  height: 10px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;  
+  transition-property: width, background-color;    
+}
+
+.about .progress-moved .progress-bar1 {
+  background-color: #ef4747;  
+  animation: progressAnimation 5s;
+}
+
+/* Specific widths for each skill */
+.about .progress-bar1.html {
+  width: 90%;
+}
+
+.about .progress-bar1.java {
+  width: 75%;
+}
+
+.about .progress-bar1.css {
+  width: 85%;
+}
+
+.about .progress-bar1.cpp {
+  width: 60%;
+}
+
+.about .progress-bar1.javascript {
+  width: 70%;
+}
+
+.about .progress-bar1.wordpress {
+  width: 50%;
+}
+
+.about .progress-bar1.python {
+  width: 80%;
+}
+
+.about .progress-bar1.figma {
+  width: 65%;
+}
+
+@keyframes progressAnimation {
+0%   { width: 5%; background-color: #f07390;}
+100% { background-color: #EF476F; }
 }
 li span {
   font-weight: bold;
