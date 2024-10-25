@@ -515,12 +515,10 @@ section .container {
   text-anchor: middle;
 }
 /*  */
-
 #about .skills .codeSkill{
   padding-left: 30px;
   padding-bottom: 30px;
 }
-
 #about .skills .codeSkill ul{
   display: flex;
   flex-direction: row; /* Stack the li items vertically */
@@ -548,7 +546,6 @@ li {
   border-radius: 30px;
   background: rgba(113, 123, 180, 0.178);  
 }
-
 .about .progress-bar1 {
   height: 10px;
   border-radius: 30px;
@@ -556,45 +553,35 @@ li {
   transition: 0.4s linear;  
   transition-property: width, background-color;    
 }
-
 .about .progress-moved .progress-bar1 {
   background-color: #ef4747;  
   animation: progressAnimation 5s;
 }
-
 /* Specific widths for each skill */
 .about .progress-bar1.html {
   width: 90%;
 }
-
 .about .progress-bar1.java {
   width: 75%;
 }
-
 .about .progress-bar1.css {
   width: 85%;
 }
-
 .about .progress-bar1.cpp {
   width: 60%;
 }
-
 .about .progress-bar1.javascript {
   width: 70%;
 }
-
 .about .progress-bar1.wordpress {
   width: 50%;
 }
-
 .about .progress-bar1.python {
   width: 80%;
 }
-
 .about .progress-bar1.figma {
   width: 65%;
 }
-
 @keyframes progressAnimation {
 0%   { width: 5%; background-color: #f07390;}
 100% { background-color: #EF476F; }
