@@ -425,27 +425,28 @@ section .container {
   font-weight: bold;
 }
 #about .adout-button button:nth-child(1) {
-  background-color: #EC4747;
-  transition: all 0.3s ease;
+  background: linear-gradient(to right, #EC4747, #000000); /* Initial gradient color */
+  background-size: 200% 100%; /* Double the width to allow the animation */
+  background-position: left bottom; /* Start from left */
+  transition: all 0.3s ease, background-position 0.3s ease; /* Smooth transition */
+  color: white;
+  border: none;
 }
+
+#about .adout-button button:nth-child(1):hover {
+  background-position: right bottom; /* Move gradient to the right */
+  color: white; /* Text color stays the same */
+}
+
 #about .adout-button button:nth-child(2) {
   transition: all 0.3s ease;
   background-color: transparent;
   border: #EC4747 solid 2px;
   color: white;
 }
-#about .adout-button button:nth-child(1):hover {
-  background-color: transparent;
-  border: #EC4747 solid 2px;
-  color: white;
-  box-shadow: 2px 3px 8px #EC4747;
-}
 #about .adout-button button:nth-child(2):hover {
   background-color: #EC4747;
-  border: #00dfff solid 2px;
   color: white;
-  box-shadow: 2px 3px 8px #EC4747;
-
 }
 #about .adout-button a {
   text-decoration: none;
@@ -569,7 +570,7 @@ li span {
 }
 #about .interests .content {
   display: flex;
-  justify-content: space-between; /* You can change this to 'center' if you want to center the entire content */
+  justify-content: space-between; 
   align-items: center;
   padding-right: 50px;
 }
