@@ -50,3 +50,42 @@ $(window).scroll(function() {
 });
 
 });
+
+///////////////////////////// toggle menu
+function toggleMenu() {
+  const navbar = document.getElementById("navbar");
+  if (navbar.style.display === "block") {
+    navbar.style.display = "none";
+  } else {
+    navbar.style.display = "block";
+  }
+}
+
+window.addEventListener('resize', function() {
+  const footerContainer = document.querySelector('.footer-container .cons');
+  const col2 = document.querySelector('.footer-container .col2');
+  const col3 = document.querySelector('.footer-container .col3');
+
+  if (footerContainer && col2 && col3) {
+    if (window.innerWidth <= 768) {
+      footerContainer.insertBefore(col3, col2);
+    } else {
+      footerContainer.insertBefore(col2, col3);
+    }
+  }
+
+  const footerContainerBlack = document.querySelector('.footer-container-black .cons');
+  const col2Black = document.querySelector('.footer-container-black .col2');
+  const col3Black = document.querySelector('.footer-container-black .col3');
+
+  if (footerContainerBlack && col2Black && col3Black) {
+    if (window.innerWidth <= 768) {
+      footerContainerBlack.insertBefore(col3Black, col2Black);
+    } else {
+      footerContainerBlack.insertBefore(col2Black, col3Black);
+    }
+  }
+});
+
+// Initial check
+window.dispatchEvent(new Event('resize'));
