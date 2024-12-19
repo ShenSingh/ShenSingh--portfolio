@@ -28,6 +28,9 @@
 <body>
 <header id="header">
     <div class="container">
+        <a href="Content.html" class="btn" id="contentBtn">
+            <span></span>
+        </a>
         <h1><a href="Content.html">Gayashan Ashinshana</a></h1>
         <h2>I'm a passionate <span>Developer</span> from Sri Lanka</h2>
 
@@ -57,6 +60,12 @@
 
 
 <script src="assets/js/main.js"></script>
+<script>
+    // move to the home-1 page
+        document.querySelector('#contentBtn').addEventListener('mouseover', function() {
+            window.location.href = 'index.html';
+        });
+</script>
     
 </body>
 

@@ -39,7 +39,7 @@
                   <!-- Main Text -->
                   <h2>I'm a passionate <span class="job-name">Developer</span> from Sri Lanka</h2>
                   <!-- Link to HomePage -->
-                  <a href="#" class="btn">
+                  <a href="Content.html" class="btn" id="indexBtn">
                     <span></span>
                 </a>
               </main>
@@ -55,5 +55,11 @@
 
 
   <script src="assets/js/main.js"></script>
+  <script>
+    document.querySelector('#indexBtn').addEventListener('mouseover', function() {
+        console.log('indexBtn clicked');
+        window.location.href = 'Content.html';
+    });
+  </script>
 </body>
 </html>

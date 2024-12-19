@@ -12,7 +12,8 @@
   }
 
 // move to the home-2 page
-document.querySelector('.btn').addEventListener('mouseover', function() {
+document.querySelector('#indexBtn').addEventListener('mouseover', function() {
+  console.log('indexBtn clicked');
   window.location.href = 'Content.html';
 });
 
