@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #eceef1;
+  font-family: 'Slabo 27px', serif;
+  color: #333a45;
+}
+
+.wrapper {
+  margin: 5em auto;
+  max-width: 1000px;
+}
+
+.header-a {
+  padding: 30px 30px 0;
+  text-align: center;
+}
+
+.header__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.header__subtitle {
+  margin: 0;
+  font-size: 1.5em;
+  color: #b3b5b8;
+  font-family: 'Yesteryear', cursive;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* Grid Container */
+.cards {
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Cards */
+.card {
+  margin: 15px;
+  width: calc((100% / 3) - 30px);
+  transition: all 0.2s ease-in-out;
+}
+
+.card a{
+    text-decoration: none;
+    color: #333a45;
+}
+
+@media screen and (max-width: 991px) {
+  .card {
+    width: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card:hover .card__inner {
+  background-color: #1abc9c;
+  transform: scale(1.05);
+}
+
+.card__inner {
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  cursor: pointer;
+  background-color: #b3b5b8;
+  color: #eceef1;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.card__inner:after {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.card__expander .fa:hover {
+  opacity: 0.9;
+}
+
+.card.is-collapsed .card__inner:after {
+  content: "";
+  opacity: 0;
+}
+
+.card.is-collapsed .card__expander {
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 0;
+}
+
+.card.is-expanded .card__inner {
+  background-color: #1abc9c;
+}
+
+.card.is-expanded .card__inner:after {
+  content: "";
+  opacity: 1;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 15px);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333a45;
+}
+
+.card.is-expanded:hover .card__inner {
+  transform: scale(1);
+}
+
+.card.is-inactive .card__inner {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.card.is-inactive:hover .card__inner {
+  background-color: #b3b5b8;
+  transform: scale(1);
+}
+
+/* Expander Widths */
+
+/* when 3 cards in a row */
+@media screen and (min-width: 992px) {
+  .card:nth-of-type(3n+2) .card__expander {
+    margin-left: calc(-100% - 30px);
+  }
+
+  .card:nth-of-type(3n+3) .card__expander {
+    margin-left: calc(-200% - 60px);
+  }
+
+  .card:nth-of-type(3n+4) {
+    clear: left;
+  }
+
+  .card__expander {
+    width: calc(300% + 60px);
+  }
+}
+
+/* when 2 cards in a row */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card:nth-of-type(2n+2) .card__expander {
+    margin-left: calc(-100% - 30px);
+  }
+
+  .card:nth-of-type(2n+3) {
+    clear: left;
+  }
+
+  .card__expander {
+    width: calc(200% + 30px);
+  }
+}
+
+    </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="view-assignment">
+        <div class="wrapper" id="assignment1">
+            <div class="header-a">
+              <h1 class="header__title">Assignment 01</h1>
+              <h2 class="header__subtitle">HTML</h2>
+            </div>
+            <div class="cards">
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-08/CASE-01/index.html">Case 01</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-08/CASE-02/index.html">Case 01</a>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assignment-02 -->
+          <div class="wrapper" id="assignment2">
+            <div class="header-a">
+              <h1 class="header__title">Assignment 02</h1>
+              <h2 class="header__subtitle">HTML</h2>
+            </div>
+            <div class="cards">
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-09/index.html">Case 01</a>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assignment-03 -->
+          <div class="wrapper" id="assignment3">
+            <div class="header-a">
+              <h1 class="header__title">Assignment 03</h1>
+              <h2 class="header__subtitle">HTML</h2>
+            </div>
+            <div class="cards">
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-03/CASE-01/case-01.html">Case 01</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-03/CASE-02/case-02.html">Case 02</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-03/CASE-03/case-03.html">Case 03</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-03/CASE-04/case-04.html">Case 04</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-03/CASE-05/case-05.html">Case 05</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-03/CASE-06/case-06.html">Case 06</a>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Assignment-04 -->
+          <div class="wrapper" id="assignment3">
+            <div class="header-a">
+              <h1 class="header__title">Assignment 04</h1>
+              <h2 class="header__subtitle">HTML</h2>
+            </div>
+            <div class="cards">
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-04/CASE-01/case-01.html">Case 01</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-04/CASE-02/case-02.html">Case 02</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-04/CASE-03/case-03.html">Case 03</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-04/CASE-04/case-04.html">Case 04</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-04/CASE-05/case-05.html">Case 05</a>  
+                  </span>
+                </div>
+              </div>
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/assignment-04/CASE-06/index.html">Case 06</a>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assignment-02 -->
+          <div class="wrapper" id="assignment2">
+            <div class="header-a">
+              <h1 class="header__title">Assignment 05</h1>
+              <h2 class="header__subtitle">Calculator</h2>
+            </div>
+            <div class="cards">
+              <div class=" card ">
+                <div class="card__inner">
+                  <span>
+                    <a href="../src/assets/assignments/simpleCalculator-html_css_js-main/src/index.html">Case 01</a>  
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+</body>
+</html>

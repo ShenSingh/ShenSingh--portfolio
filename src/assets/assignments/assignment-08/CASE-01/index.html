@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Queue Animation</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            height: 100vh;
+            margin: 300px auto;
+        }
+
+        .title {
+            text-align: center;
+            color: #f06292;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .queue {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .person {
+            width: 200px;
+            height: 150px;
+            background-image: url('/assets/gifs/gif.gif'); /* Replace with your GIF */
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .person::after {
+            content: attr(data-letter);
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            color: #00bcd4;
+        }
+
+        .house {
+            width: 100px;
+            height: 100px;
+            background-image: url('/assets/images/river.png'); /* Image of the house */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">JS Queue</h1>
+    <div class="queue">
+        <div class="person" data-letter="A"></div>
+        <div class="person" data-letter="B"></div>
+        <div class="person" data-letter="C"></div>
+        <div class="person" data-letter="D"></div>
+        <div class="person" data-letter="E"></div>
+        <div class="person" data-letter="F"></div>
+        <div class="house"></div>
+    </div>
+
+    <div class="controls">
+        <button id="toggleButton" class="btn">
+            <i class="fa-regular fa-circle-play" style="font-size: 50px; color: #ffffff;"></i>
+        </button>
+    </div>
+</div>
+
+<script>
+    $(document).ready(() => {
+        let people = $('.person');
+        let letters = ['D', 'E', 'F', 'A', 'B', 'C'];
+        let intervalId;
+        let isRunning = true;
+
+        const rotateLetters = () => {
+            let firstLetter = letters.shift(); // Remove the first element from the array
+            letters.push(firstLetter); // Add the removed element to the end of the array
+
+            people.each((index, person) => {
+                $(person).attr('data-letter', letters[index]);
+            });
+        };
+
+        // Start the queue rotation
+        clearInterval(intervalId);
+
+        // Toggle button to start/stop the queue
+        $('#toggleButton').click(() => {
+            if (isRunning) {
+                clearInterval(intervalId); // Stop the rotation
+                $('#toggleButton').html('<i class="fa-regular fa-circle-play" style="font-size: 50px; color: #ffffff;"></i>');
+            } else {
+                intervalId = setInterval(rotateLetters, 1000); // Start the rotation
+                $('#toggleButton').html('<i class="fa-regular fa-circle-pause" style="font-size: 50px; color: #ffffff;"></i>');
+            }
+            isRunning = !isRunning; // Toggle running state
+        });
+    });
+</script>
+</body>
+</html>

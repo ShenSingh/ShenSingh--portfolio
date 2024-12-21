@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="switch-container">
+        <div class="icon">
+            <i class="fa-regular fa-sun" id="mode-icon"></i> <!-- Ensure you use 'fas' for solid icons -->
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider round">
+        </span>
+        </label>
+    </div>
+
+    <div class="cal-container">
+        <div class="cal-screen">
+            <input id="cal-view" type="text" placeholder="0">
+        </div>
+        <div class="cal-keys">
+            <div class="cal-row">
+                <button class="clear-btn" id="backspace-btn">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button onclick="factorial()">x!</button>
+                <button class="cal-key">(</button>
+                <button class="cal-key">)</button>
+                <button class="cal-key">%</button>
+                <button class="clear-btn" id="clear-btn">AC</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="sin()">sin</button>
+                <button onclick="pi()">π</button>
+                <button class="cal-key">7</button>
+                <button class="cal-key">8</button>
+                <button class="cal-key">9</button>
+                <button class="cal-key">/</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="cos()">cos</button>
+                <button onclick="log()">log</button>
+                <button class="cal-key">4</button>
+                <button class="cal-key">5</button>
+                <button class="cal-key">6</button>
+                <button class="cal-key">*</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="tan()">tan</button>
+                <button onclick="sqrt()">√</button>
+                <button class="cal-key">1</button>
+                <button class="cal-key">2</button>
+                <button class="cal-key">3</button>
+                <button class="cal-key">-</button>
+            </div>
+            <div class="cal-row">
+                <button onclick="e()">e</button>
+                <button onclick="pow()">x<sup>y</sup></button>
+                <button class="cal-key">0</button>
+                <button class="cal-key">.</button>
+                <button class="equal-btn" id="equal-btn">=</button>
+                <button class="cal-key">+</button>
+            </div>
+        </div>
+    </div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

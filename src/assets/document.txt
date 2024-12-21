@@ -1,0 +1,7 @@
+sitemap : https://www.gloomaps.com/qNNkwrXrXJ
+
+wire frame : https://drive.google.com/file/d/1ojNqf8LWIXB_7T00u0HebGxAgi9MSVki/view?usp=sharing
+
+Mockup : https://www.figma.com/design/FYGLczQ4EtVjgbDeDTwV5j/POS?node-id=0-1&t=af9axg9Lzr7QINns-1
+
+project-link : https://github.com/ShenSingh/favourite_bag-pos_system.git
